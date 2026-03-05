@@ -24,12 +24,13 @@ pipeline {
                 '''
             }
         }
-
+/*
         stage('Push Docker Image') {
             steps {
                 sh 'docker push rakeshthagilla/node-docker-app:${BUILD_NUMBER}'
             }
         }
+        */
         
         stage('Create container') {
             steps {
